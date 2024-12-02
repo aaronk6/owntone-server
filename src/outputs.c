@@ -1247,6 +1247,7 @@ outputs_write(void *buf, size_t bufsize, int nsamples, struct media_quality *qua
 void
 outputs_metadata_send(uint32_t item_id, bool startup, output_metadata_finalize_cb cb)
 {
+  DPRINTF(E_WARN, L_PLAYER, "outputs_metadata_send is disabeld for debugging!\n");
   return;
 /*	
   int i;
